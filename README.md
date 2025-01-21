@@ -1,12 +1,9 @@
-# Личный проект «Кэт энерджи»
-
-* Студент: [Anna Baidikova](https://up.htmlacademy.ru/adaptive/31/user/2448369).
-* Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
+# Личный проект для студии миофасциаольной коррекции "Основа"
 
 
 ---
 
-**Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
+**Обратите внимание, что папка с исходными файлами для работы над проектом — `source/`.**
 
 _Не удаляйте и не обращайте внимание на файлы и папки:_<br>
 _`.github`, `.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.linthtmlrc`, `.stylelintrc`, `.gulpfile.js`, `svgo.config.js` `package.json`, `package-lock.json`._
