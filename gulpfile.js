@@ -73,14 +73,30 @@ export function processStyles () {
     .pipe(server.stream());
 }
 
+// export function processScripts () {
+//   const gulpEsbuild = createGulpEsbuild({ incremental: isDevelopment });
+
+//   return src(`${PATH_TO_SOURCE}scripts/*.js`)
+//     .pipe(gulpEsbuild({
+//       bundle: true,
+//       format: 'esm',
+//       // splitting: true,
+//       platform: 'browser',
+//       minify: !isDevelopment,
+//       sourcemap: isDevelopment,
+//       target: browserslistToEsbuild(),
+//     }))
+//     .pipe(dest(`${PATH_TO_DIST}scripts`))
+//     .pipe(server.stream());
+// }
+
 export function processScripts () {
   const gulpEsbuild = createGulpEsbuild({ incremental: isDevelopment });
 
   return src(`${PATH_TO_SOURCE}scripts/*.js`)
     .pipe(gulpEsbuild({
       bundle: true,
-      format: 'esm',
-      // splitting: true,
+      format: 'esm', // Убедитесь, что используется формат ES модуля
       platform: 'browser',
       minify: !isDevelopment,
       sourcemap: isDevelopment,
@@ -89,6 +105,7 @@ export function processScripts () {
     .pipe(dest(`${PATH_TO_DIST}scripts`))
     .pipe(server.stream());
 }
+
 
 export function optimizeRaster () {
   const RAW_DENSITY = 2;

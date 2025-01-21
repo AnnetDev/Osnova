@@ -1,39 +1,39 @@
-// import Swiper from 'swiper';
-// import { Navigation } from 'swiper/modules';
-// import 'swiper/scss';
-
-import Swiper, { Navigation } from 'swiper';
-import 'swiper/swiper-bundle.min.css';// Подключение стилей
+import Swiper from 'swiper/bundle';
+import { Navigation } from 'swiper/modules';
+// import Swiper styles
+import 'swiper/css/bundle';
+import 'swiper/css/navigation';
 
 
 export function initializeGallerySwiper() {
   const reviewsSwiper = new Swiper('.gallery__swiper', {
     modules: [Navigation],
-    loop: true,
+    loop: false,
     // grabCursor: true,
     normalizeSliderIndex: true,
+    direction: 'horizontal',
     navigation: {
       nextEl: '.gallery__button.swiper-button-next',
       prevEl: '.gallery__button.swiper-button-prev',
     },
     slidesPerGroup: 1,
-
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 15,
-        centeredSlides: true,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        // slidesOffsetAfter: 30,
-      },
-      1440: {
-        slidesPerView: 4,
-        // spaceBetween: 120,
-      },
-    },
+    slidesPerView: 'auto',
+    // breakpoints: {
+    //   320: {
+    //     slidesPerView: 1,
+    //     spaceBetween: 15,
+    //     centeredSlides: true,
+    //   },
+    //   768: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 30,
+    //     // slidesOffsetAfter: 30,
+    //   },
+    //   1440: {
+    //     slidesPerView: 2,
+    //     // spaceBetween: 120,
+    //   },
+    // },
   });
 
   const prevButton = document.querySelector('.gallery__button.swiper-button-prev');
