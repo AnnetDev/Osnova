@@ -6,21 +6,106 @@
   <title>Osnova</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- favicon -->
+  <!-- fonts preload -->
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
   <main class="main">
+
     <section class="hero">
-      <h2>Студия миофасциаольной коррекции</h2>
-      <h1>Основа</h1>
+      <h2 class="hero__heading">Студия миофасциаольной коррекции</h2>
+      <h1 class="hero__title">Основа</h1>
     </section>
+
+    <section class="gallery">
+      swiper
+
+      <div class="swiper gallery__swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x" width="409" height="600">
+              <!-- <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x" width="768"
+                height="1034">
+              <source type="image/webp"
+                srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x" width="320"
+                height="568"> -->
+
+              <!-- <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="409"
+                height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="768"
+                height="1034"> -->
+              <img class="hero__swiper-image" src="images/swiper-slide-1@1x.jpg" srcset="images/swiper-slide-1@2x.jpg"
+                width="409" height="600" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-2@1x.webp 1x, images/swiper-slide-2@2x.webp 2x" width="409" height="600">
+              <!-- <source type="image/webp" media="(min-width: 768px)"
+            srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x" width="768"
+            height="1034">
+          <source type="image/webp"
+            srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x" width="320"
+            height="568"> -->
+
+              <!-- <source type="image/jpg" media="(min-width: 1440px)"
+            srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="409"
+            height="600">
+          <source type="image/jpg" media="(min-width: 768px)"
+            srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="768"
+            height="1034"> -->
+              <img class="hero__swiper-image" src="images/swiper-slide2@1x.jpg" srcset="images/swiper-slide-2@2x.jpg"
+                width="409" height="600" alt="">
+            </picture>
+          </div>
+
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-3@1x.webp 1x, images/swiper-slide-3@2x.webp 2x" width="409" height="600">
+              <!-- <source type="image/webp" media="(min-width: 768px)"
+            srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x" width="768"
+            height="1034">
+          <source type="image/webp"
+            srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x" width="320"
+            height="568"> -->
+
+              <!-- <source type="image/jpg" media="(min-width: 1440px)"
+            srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="409"
+            height="600">
+          <source type="image/jpg" media="(min-width: 768px)"
+            srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="768"
+            height="1034"> -->
+              <img class="hero__swiper-image" src="images/swiper-slide3@1x.jpg" srcset="images/swiper-slide-3@2x.jpg"
+                width="409" height="600" alt="">
+            </picture>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="gallery__button swiper-button-prev"></div>
+        <div class="gallery__button swiper-button-next"></div>
+
+      </div>
+    </section>
+
     <section class="services">
-      <h2>Студия миофасциаольной коррекции</h2>
-      <ul class="services__massage">Массаж
+      <h2 class="services__heading">Массаж</h2>
+      <ul class="services__massage">
         <li class="services__massage-item">Классический</li>
         <li class="services__massage-item">Миофасциальный</li>
         <li class="services__massage-item">Лифтинг</li>
@@ -28,6 +113,8 @@
         <li class="services__massage-item">Антицеллюлитный</li>
         <li class="services__massage-item">Обучение</li>
       </ul>
+
+      <h2 class="services__heading">Тренировки</h2>
       <ul class="services__fitness">Тренировки
         <li class="services__fitness-item">Фитнес для мам с детьми
         <li>Послеродовое восстановление</li>
@@ -39,7 +126,34 @@
         <li class="services__fitness-item">Индивидуальные и групповые занятия</li>
       </ul>
     </section>
+
+    <section class="contacts">
+      <h2 class="contacts__heading">
+        Контакты
+      </h2>
+      <ul class="contacts__list">
+        <li class="contacts__list-item">
+          <a class="contacts__list-link">
+            <span class="visually-hidden">ссылка на Вконтакте</span>
+          </a>
+        </li>
+        <li class="contacts__list-item">
+          <a class="contacts__list-link">
+            <span class="visually-hidden">ссылка на Телеграм</span>
+          </a>
+        </li>
+        <li class="contacts__list-item">
+          <a class="contacts__list-link">
+            <span class="visually-hidden">ссылка на Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+
+      <div>map</div>
+    </section>
   </main>
+  <section class="footer"></section>
+
 </body>
 
 </html>

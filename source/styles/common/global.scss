@@ -1,13 +1,25 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  font-family: "Lato", "Arial", sans-serif;
-  color: $base-color-text;
-  background-color: #ffffff;
+  font-family: $project-font;
+  // font-weight: 400;
+  // font-size: 12px;
+  color: black;
+  background-color: #337c86;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  min-width: 320px;
+  // max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  // z-index: 0;
 }
