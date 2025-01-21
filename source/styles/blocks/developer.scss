@@ -1,0 +1,62 @@
+.developer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+}
+
+.developer__logo-text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.developer__link {
+  color: $base-color-text;
+  text-decoration: none;
+  display: block;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.developer__logo-image {
+  position: relative;
+  width: 27px;
+  height: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 34px;
+    inset: 0;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#html-academy");
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:hover::before {
+    background-color: $bg-basic-green;
+  }
+
+  &:active::before {
+    background-color: $bg-basic-green;
+    opacity: 30%;
+  }
+}

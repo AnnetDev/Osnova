@@ -1,0 +1,106 @@
+.slider {
+  position: relative;
+  max-width: 280px;
+  max-height: 256px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    max-height: 512px;
+    background-image: linear-gradient(to bottom, $base-color-white 151px, #eaeaea 151px);
+  }
+}
+
+.slider__img {
+  max-width: 280px;
+  max-height: 256px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    max-height: 512px;
+    background-image: linear-gradient(to bottom, $base-color-white 150px, #eaeaea 150px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $base-color-white 137px, #f2f2f2 137px);
+  }
+}
+
+.slider__cat-before {
+  background-color: #eaeaea;
+}
+
+.slider__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 280px;
+  max-height: 256px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    max-height: 512px;
+  }
+}
+
+.slider__cat-after {
+  background-color: #eaeaea;
+}
+
+.slider__toggle-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+
+.slider__toggle-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  min-height: 256px;
+  background-color: #666666;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+}
+
+.slider__toggle {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+}
+
+.slider__toggle::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  border-radius: 50%;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#slider-toggle-icon");
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.slider__toggle-wrapper:hover::before,
+.slider__toggle-wrapper:hover .slider__toggle::before {
+  background-color: $bg-basic-green;
+}
+
+.slider__toggle-wrapper:active::before,
+.slider__toggle-wrapper:active .slider__toggle::before {
+  background-color: $bg-basic-green;
+  opacity: 60%;
+}

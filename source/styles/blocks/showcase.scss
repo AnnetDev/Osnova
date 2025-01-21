@@ -1,0 +1,226 @@
+.showcase {
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $base-color-white 619px, #eaeaea 619px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $base-color-white 137px, #f2f2f2 137px);
+  }
+}
+
+.showcase__content-wrapper {
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 75px;
+  }
+}
+
+.showcase__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $base-color-black;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+
+.showcase__description {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+    min-height: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    max-width: 436px;
+    margin-bottom: 0;
+    padding-top: 86px;
+    padding-bottom: 20px;
+  }
+}
+
+.showcase__facts {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    margin-bottom: 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-flow: row wrap;
+    place-content: flex-start flex-start;
+    margin: 0;
+    gap: 60px 42px;
+    max-width: 436px;
+    padding-top: 50px;
+  }
+}
+
+.showcase__fact {
+  width: fit-content;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  justify-content: center;
+  position: relative;
+  min-width: 124px;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    margin-bottom: 0;
+  }
+}
+
+.showcase__fact:nth-child(1) {
+  margin-right: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.showcase__fact:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-right: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+
+.showcase__fact-term {
+  position: absolute;
+  content: "";
+  margin: 0;
+  align-self: center;
+  bottom: -14px;
+  padding: 0 9px 0 7px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: #eaeaea;
+  width: 77px;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $base-color-white;
+    padding: 0 10px;
+    bottom: -6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+    bottom: -5px;
+  }
+}
+
+.showcase__fact-description {
+  margin: 0;
+  padding: 15px 20px 17px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $base-color-black;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid #cdcdcd 1px;
+  border-radius: 3%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 20px 18px;
+  }
+}
+
+.showcase__expend {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-color-black;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  justify-content: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    font-size: 20px;
+    max-width: 176px;
+    text-align: right;
+    margin-right: 0;
+    justify-content: flex-start;
+    padding-top: 10px;
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    max-width: none;
+    width: 366px;
+    display: flex;
+    text-align: left;
+    padding-top: 0;
+    gap: 66px;
+  }
+}
+
+.showcase__expend-description {
+  margin: 0;
+}

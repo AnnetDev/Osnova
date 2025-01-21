@@ -1,0 +1,195 @@
+.catalog-additional {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 96px;
+  }
+}
+
+.catalog-additional__content-wrapper {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+}
+
+.catalog-additional__title {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $base-color-black;
+  padding: 0 20px;
+  margin-bottom: 34px;
+  background-color: $base-color-white;
+  width: fit-content;
+  padding-right: 40px;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    width: fit-content;
+    padding: 0 40px;
+    margin-bottom: 80px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    margin-left: -40px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 77px;
+  }
+}
+
+.catalog-additional__header {
+  width: 100%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    top: 9px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 16px;
+    }
+  }
+}
+
+.catalog-additional__promo {
+  min-width: 280px;
+  min-height: 290px;
+  background-image:
+    image-set(
+      url("../../images/additionalpromo-bg-mobile@1x.webp") 1x,
+      url("../../images/additionalpromo-bg-mobile@2x.webp") 2x,
+      url("../../images/additionalpromo-bg-mobile@1x.jpg") 1x,
+      url("../../images/additionalpromo-bg-mobile@2x.jpg") 2x);
+  background-color: $bg-basic-green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 0 50px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: unset;
+    height: 200px;
+    min-width: auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: flex-end;
+    background-image:
+      image-set(
+        url("../../images/additionalpromo-bg-tablet@1x.webp") 1x,
+        url("../../images/additionalpromo-bg-tablet@2x.webp") 2x,
+        url("../../images/additionalpromo-bg-tablet@1x.jpg") 1x,
+        url("../../images/additionalpromo-bg-tablet@2x.jpg") 2x);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+    background-image:
+      image-set(
+        url("../../images/additionalpromo-bg-desktop@1x.webp") 1x,
+        url("../../images/additionalpromo-bg-desktop@2x.webp") 2x,
+        url("../../images/additionalpromo-bg-desktop@1x.jpg") 1x,
+        url("../../images/additionalpromo-bg-desktop@2x.jpg") 2x);
+  }
+  margin-bottom: 0;
+}
+
+.catalog-additional__promo::before {
+  position: absolute;
+  content: "";
+  min-width: 78px;
+  min-height: 80px;
+  background-image: url("../../icons/stack.svg#catalog-promo-icon");
+  left: 50%;
+  transform: translateX(-50%);
+  top: 58px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    min-height: 82px;
+    left: 77px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 83px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 56px;
+  }
+}
+
+.catalog-additional__promo-titile {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $base-color-white;
+  padding-top: 187px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 71px;
+    width: 161px;
+    text-align: left;
+    margin-right: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 185px;
+    margin: 0 auto;
+  }
+}
+
+.catalog-additional__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+  border-top: solid 1px #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    border: solid 1px #cdcdcd;
+    min-height: 288px;
+    margin: 0;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    border-top: solid 1px #cdcdcd;
+    margin: 0;
+    width: 896px;
+    min-height: 288px;
+  }
+}
