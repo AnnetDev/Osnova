@@ -1,21 +1,42 @@
+.hero {
+  padding: 10px 0 20px;
+  border-bottom: solid 1px #bccaca;
+}
+
 .hero__heading {
   font-family: "Poppins", Arial, sans-serif;
   color: #bccaca;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 26px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 500;
-  margin: 0;
+  margin: 0 0 10px;
   padding: 0;
+  display: block;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+  line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
 }
 
 .hero__title {
+  display: block;
   color: #bccaca;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 85px;
+  font-size: 60px;
+  line-height: 65px;
   margin: 0;
   padding: 0;
-  // line-height: 28px;
+  width: 280px;
 }
+
+
