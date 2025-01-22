@@ -1,0 +1,54 @@
+.footer {
+  padding: 20px;
+  font-family: $project-font;
+  // border-top: solid 1px #bccaca;
+  min-width: 320px;
+  // max-width: 320px;
+  margin: 0 auto;
+}
+
+.footer__contacts-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px 20px;
+}
+
+.footer__contacts-item {
+  display: flex;
+  margin: 0;
+  padding: 0 0 0 20px;
+  position: relative;
+}
+
+.footer__contacts-description,
+.footer__contacts-link {
+  text-decoration: none;
+  color: #d3e1e1;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.footer__contacts-item--phone::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 0;
+  mask: url(../../icons/call.svg) no-repeat center;
+  background-color: #ffffff;
+}
+
+.footer__contacts-item--address::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 0;
+  mask: url(../../icons/location.svg) no-repeat center;
+  background-color: #ffffff;
+}

@@ -1,7 +1,18 @@
 .contacts {
   padding: 20px 0;
   font-family: $project-font;
-  border-top: solid 1px #bccaca;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: #bccaca;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .contacts__heading {
@@ -10,6 +21,7 @@
   font-size: 24px;
   line-height: 22px;
   font-weight: 700;
+  color: #d3e1e1;
 }
 
 .contacts__list {
@@ -103,7 +115,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #bccaca;
+  background-color: #d3e1e1;
 
   &--vk {
     mask: url(../../icons/vk.svg) no-repeat center;

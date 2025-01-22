@@ -1,11 +1,23 @@
 .hero {
   padding: 10px 0 20px;
-  border-bottom: solid 1px #bccaca;
+  // border-bottom: solid 1px #bccaca;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: #bccaca;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .hero__heading {
   font-family: "Poppins", Arial, sans-serif;
-  color: #bccaca;
+  color: #d3e1e1;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 20px;
@@ -29,7 +41,7 @@
 
 .hero__title {
   display: block;
-  color: #bccaca;
+  color: #d3e1e1;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 60px;
