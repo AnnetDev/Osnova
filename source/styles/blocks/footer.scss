@@ -1,6 +1,7 @@
 .footer {
   padding: 20px;
   font-family: $project-font;
+  letter-spacing: 0;
   // border-top: solid 1px #bccaca;
   min-width: 320px;
   // max-width: 320px;
@@ -14,7 +15,7 @@
   list-style: none;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 20px 20px;
+  gap: 20px 15px;
 }
 
 .footer__contacts-item {
@@ -28,8 +29,8 @@
 .footer__contacts-link {
   text-decoration: none;
   color: #d3e1e1;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
 }
 
