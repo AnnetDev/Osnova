@@ -1,0 +1,16 @@
+/* GLOBAL */
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+
+// BLOCKS
+@import "./blocks/main.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/services.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/swiper-gallery.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/booking.scss";
