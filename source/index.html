@@ -14,9 +14,40 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
+    <button class="header__toggle js-toggle-button" type="button">
+      <span class="header__toggle-icon"></span>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="header__navigation" aria-label="Главгая навигация сайта">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#gallery">
+            Галерея
+          </a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#services">
+            Услуги
+          </a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#booking">
+            Записаться
+          </a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#contacts">
+            Конатакты и адрес
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a class="booking__link header__booking__link" href="http://dikidi.ru/1453246?p=1.pi-po" target="_blank"
+    rel="noopener noreferrer">Записаться</a>
 
   </header>
+
   <main class="main">
 
     <section class="hero">
@@ -24,8 +55,8 @@
       <h1 class="hero__title">Основа</h1>
     </section>
 
-    <section class="gallery">
-      <h1 class="visually-hidden"></h1>
+    <section class="gallery" id="gallery">
+      <h2 class="visually-hidden">Студия миофасциаольной коррекции Основа</h2>
       <div class="swiper gallery__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -245,7 +276,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <h2 class="services__heading">Массаж</h2>
       <ul class="services__massage">
         <li class="services__massage-item">Классический</li>
@@ -271,14 +302,14 @@
       </ul>
     </section>
 
-    <section class="booking">
+    <section class="booking" id="booking">
       <h2 class="booking__heading">Подарите себе заботу и гармонию!</h2>
       <h3 class="booking__subheading">Выберите услугу и запишитесь сейчас.</h3>
       <a class="booking__link" href="http://dikidi.ru/1453246?p=1.pi-po" target="_blank"
         rel="noopener noreferrer">Записаться</a>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="contacts__heading">
         Контакты
       </h2>
