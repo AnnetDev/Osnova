@@ -5,16 +5,19 @@
   <meta charset="UTF-8">
   <title>Osnova</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- favicon -->
+  <!-- change favicon -->
   <!-- fonts preload -->
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
   <header class="header">
+    <div class="header__wrapper">
     <button class="header__toggle js-toggle-button" type="button">
       <span class="header__toggle-icon"></span>
       <span class="visually-hidden">Открыть меню</span>
@@ -45,14 +48,27 @@
     </nav>
     <a class="booking__link header__booking__link" href="http://dikidi.ru/1453246?p=1.pi-po" target="_blank"
     rel="noopener noreferrer">Записаться</a>
-
+  </div>
   </header>
 
   <main class="main">
 
     <section class="hero">
+      <div>
       <h2 class="hero__heading">Студия миофасциаольной коррекции</h2>
-      <h1 class="hero__title">Основа</h1>
+      <h1 class="hero__title" data-heading="Основа">Основа</h1>
+    </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)"
+        srcset="images/main-image@1x.webp 1x, images/main-image@2x.webp 2x" width="460" height="600">
+      <source type="image/webp" media="(min-width: 768px)"
+        srcset="images/main-image@1x.webp 1x, images/main-image@2x.webp 2x" width="306" height="400">
+
+      <source type="image/jpg" media="(min-width: 1440px)"
+        srcset="images/main-image@1x.jpg 1x, images/main-image@2x.jpg 2x" width="460" height="600">
+      <img class="hero__image" media="(min-width: 768px)"
+      src="images/main-image@1x.jpg" srcset="images/main-image@2x.jpg" width="306" height="400" alt="">
+      </picture>
     </section>
 
     <section class="gallery" id="gallery">
@@ -72,7 +88,7 @@
                 srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-1@1x.jpg" srcset="images/swiper-slide-3@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-1@1x.jpg" srcset="images/swiper-slide-3@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -90,7 +106,7 @@
                 srcset="images/swiper-slide-2@1x.jpg 1x, images/swiper-slide-2@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-2@1x.jpg 1x, images/swiper-slide-2@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-2@1x.jpg" srcset="images/swiper-slide-2@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-2@1x.jpg" srcset="images/swiper-slide-2@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -108,7 +124,7 @@
                 srcset="images/swiper-slide-3@1x.jpg 1x, images/swiper-slide-3@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-3@1x.jpg 1x, images/swiper-slide-3@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-3@1x.jpg" srcset="images/swiper-slide-3@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-3@1x.jpg" srcset="images/swiper-slide-3@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -126,7 +142,7 @@
                 srcset="images/swiper-slide-4@1x.jpg 1x, images/swiper-slide-4@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-4@1x.jpg 1x, images/swiper-slide-4@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-4@1x.jpg" srcset="images/swiper-slide-4@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-4@1x.jpg" srcset="images/swiper-slide-4@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -144,7 +160,7 @@
                 srcset="images/swiper-slide-5@1x.jpg 1x, images/swiper-slide-5@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-5@1x.jpg 1x, images/swiper-slide-5@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-5@1x.jpg" srcset="images/swiper-slide-5@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-5@1x.jpg" srcset="images/swiper-slide-5@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -161,7 +177,7 @@
                 srcset="images/swiper-slide-6@1x.jpg 1x, images/swiper-slide-6@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-6@1x.jpg 1x, images/swiper-slide-6@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-6@1x.jpg" srcset="images/swiper-slide-6@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-6@1x.jpg" srcset="images/swiper-slide-6@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -178,7 +194,7 @@
                 srcset="images/swiper-slide-7@1x.jpg 1x, images/swiper-slide-7@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-7@1x.jpg 1x, images/swiper-slide-7@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-7@1x.jpg" srcset="images/swiper-slide-7@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-7@1x.jpg" srcset="images/swiper-slide-7@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -195,7 +211,7 @@
                 srcset="images/swiper-slide-8@1x.jpg 1x, images/swiper-slide-8@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-8@1x.jpg 1x, images/swiper-slide-8@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-8@1x.jpg" srcset="images/swiper-slide-8@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-8@1x.jpg" srcset="images/swiper-slide-8@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -212,7 +228,7 @@
                 srcset="images/swiper-slide-9@1x.jpg 1x, images/swiper-slide-9@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-9@1x.jpg 1x, images/swiper-slide-9@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-9@1x.jpg" srcset="images/swiper-slide-9@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-9@1x.jpg" srcset="images/swiper-slide-9@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -229,7 +245,7 @@
                 srcset="images/swiper-slide-10@1x.jpg 1x, images/swiper-slide-10@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-10@1x.jpg 1x, images/swiper-slide-10@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-10@1x.jpg" srcset="images/swiper-slide-10@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-10@1x.jpg" srcset="images/swiper-slide-10@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -246,7 +262,7 @@
                 srcset="images/swiper-slide-11@1x.jpg 1x, images/swiper-slide-11@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-11@1x.jpg 1x, images/swiper-slide-11@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-11@1x.jpg" srcset="images/swiper-slide-11@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-11@1x.jpg" srcset="images/swiper-slide-11@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -263,7 +279,7 @@
                 srcset="images/swiper-slide-12@1x.jpg 1x, images/swiper-slide-12@2x.jpg 2x" width="409" height="600">
               <source type="image/jpg" media="(min-width: 768px)"
                 srcset="images/swiper-slide-12@1x.jpg 1x, images/swiper-slide-12@2x.jpg 2x" width="286" height="420">
-              <img class="hero__swiper-image" src="images/swiper-slide-12@1x.jpg" srcset="images/swiper-slide-12@2x.jpg"
+              <img class="gallery__swiper-image" src="images/swiper-slide-12@1x.jpg" srcset="images/swiper-slide-12@2x.jpg"
                 width="245" height="360" alt="">
             </picture>
           </div>
@@ -277,6 +293,7 @@
     </section>
 
     <section class="services" id="services">
+      <div>
       <h2 class="services__heading">Массаж</h2>
       <ul class="services__massage">
         <li class="services__massage-item">Классический</li>
@@ -286,7 +303,9 @@
         <li class="services__massage-item">Антицеллюлитный</li>
         <li class="services__massage-item">Обучение</li>
       </ul>
+    </div>
 
+    <div>
       <h2 class="services__heading">Тренировки</h2>
       <ul class="services__fitness">
         <li class="services__fitness-item">Фитнес для мам с детьми
@@ -300,6 +319,7 @@
         </li>
         <li class="services__fitness-item">Индивидуальные и групповые занятия</li>
       </ul>
+    </div>
     </section>
 
     <section class="booking" id="booking">
@@ -313,7 +333,7 @@
       <h2 class="contacts__heading">
         Контакты
       </h2>
-
+      <div class="contacts__wrapper">
       <ul class="contacts__list">
         <li class="contacts__list-item contacts__list-item--phone">
           <h3 class="contacts__list-title">Телефон:</h3>
@@ -330,6 +350,7 @@
           </a>
         </li>
       </ul>
+
 
 
       <ul class="contacts__social-list">
@@ -353,15 +374,15 @@
           </a>
         </li>
       </ul>
-
+    </div>
       <div class="contacts__location">
         <div style="position:relative;overflow:hidden;">
           <iframe class="contacts__location-map"
             src="https://yandex.com/map-widget/v1/?ll=39.159587%2C51.716678&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzg4MjI1MxJS0KDQvtGB0YHQuNGPLCDQktC-0YDQvtC90LXQtiwg0YPQu9C40YbQsCDQktC70LDQtNC40LzQuNGA0LAg0J3QtdCy0YHQutC-0LPQviwgMjUvMiIKDXajHEIVxN1OQg%2C%2C&z=17.52"
-            width="320" height="362" allowfullscreen="true" style="position:relative;">
+            width="320" height="362" allowfullscreen="true" style="position:relative;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
           <picture>
-
+<!-- do not forget -->
           </picture>
         </div>
       </div>

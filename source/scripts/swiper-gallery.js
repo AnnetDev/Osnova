@@ -17,7 +17,7 @@ export function initializeGallerySwiper() {
     },
     // slidesPerView: 1, // Отображать 1 слайд на экране
     // spaceBetween: 20,
-    // slidesPerGroup: 1,
+    slidesPerGroup: 1,
     // slidesPerView: 'auto',
     breakpoints: {
       320: {
@@ -27,7 +27,7 @@ export function initializeGallerySwiper() {
 
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30,
         // slidesOffsetAfter: 30,
       },

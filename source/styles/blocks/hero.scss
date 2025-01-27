@@ -1,6 +1,5 @@
 .hero {
-  padding: 20px 0;
-  // border-bottom: solid 1px #bccaca;
+  padding: 20px;
   position: relative;
   font-family: $project-font;
 
@@ -15,10 +14,26 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 45px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
+.hero__image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .hero__heading {
-  font-family: "Poppins", Arial, sans-serif;
   color: #d3e1e1;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -31,14 +46,13 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    font-size: 26px;
-  line-height: 28px;
+    font-size: 28px;
+    line-height: 38px;
+    margin: 0 0 20px;
   }
 
   @media (min-width: $desktop-width) {
-
   }
-
 }
 
 .hero__title {
@@ -51,6 +65,23 @@
   margin: 0;
   padding: 0;
   width: 280px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 68px;
+    line-height: 75px;
+
+    &::before {
+      position: absolute;
+      content: attr(data-heading);
+      font-size: 75px;
+      line-height: 80px;
+      opacity: 3%;
+      left: 0;
+      // transform: translateX(-50%);
+      top: -26px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+  }
 }
-
-

@@ -5,6 +5,14 @@
   width: 100%;
   overflow: hidden;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
 
 .swiper-wrapper {
@@ -13,6 +21,14 @@
   transition: transform 0.3s ease;
   width: 285px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0;
+    // margin: 0 auto;
+    // justify-content: center;
+
+  }
 }
 
 .swiper-slide {
@@ -21,9 +37,21 @@
   height: auto;
   display: flex;
   margin: 0 auto;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
+  @media (min-width: $tablet-width) {
+justify-content: center;
+  width: 286px;
+}
 }
 
+.gallery__swiper-image {
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+}
 
 // .swiper-navigation {
 //   display: flex;
@@ -53,26 +81,37 @@
   transform: translateY(-50%);
   margin: 0;
   padding: 0;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 25px
+  }
 
 }
 
 .gallery__button.swiper-button-next {
     content: "";
-    width: 20px;
-    height: 20px;
     mask: url(../../icons/arrow-right.svg) no-repeat center;
     background-color: #bccaca;
     background-size: contain;
     right: 0;
+    @media (min-width: $tablet-width) {
+      right: -5px;
+
+    }
 }
 
 .gallery__button.swiper-button-prev {
     content: "";
-    width: 20px;
-    height: 20px;
     mask: url(../../icons/arrow-left.svg) no-repeat center;
     background-color: #bccaca;
     background-size: contain;
     left: 0;
+    @media (min-width: $tablet-width) {
+      left: -5px;
+
+    }
   }
 

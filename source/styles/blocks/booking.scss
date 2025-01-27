@@ -1,7 +1,6 @@
 .booking {
   padding: 20px 0;
   font-family: $project-font;
-  // border-top: solid 1px #bccaca;
   display: flex;
   flex-flow: column wrap;
   gap: 15px;
@@ -20,7 +19,9 @@
     transform: translateX(-50%);
     max-width: 1440px;
   }
-
+  @media (min-width: $tablet-width) {
+    padding: 30px 45px;
+  }
 }
 
 .booking__heading {
@@ -34,6 +35,13 @@
   line-height: 38px;
   text-transform: uppercase;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    font-size: 30px;
+    line-height: 40px;
+
+  }
 }
 
 .booking__subheading {
@@ -47,6 +55,10 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
 }
 
 .booking__link {
@@ -77,5 +89,10 @@
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    font-size: 18px;
   }
 }

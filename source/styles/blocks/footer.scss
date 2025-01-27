@@ -2,10 +2,8 @@
   padding: 20px;
   font-family: $project-font;
   letter-spacing: 0;
-  // border-top: solid 1px #bccaca;
   min-width: 320px;
   max-width: 1440px;
-  // margin: 0 auto;
   background-color: #403270;
 }
 
@@ -33,6 +31,11 @@
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .footer__contacts-item--phone::after {
