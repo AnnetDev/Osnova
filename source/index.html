@@ -5,23 +5,413 @@
   <meta charset="UTF-8">
   <title>Osnova</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- favicon -->
+  <!-- change favicon -->
+  <!-- fonts preload -->
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__wrapper">
+    <button class="header__toggle js-toggle-button" type="button">
+      <span class="header__toggle-icon"></span>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="header__navigation" aria-label="Главгая навигация сайта">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#gallery">
+            Галерея
+          </a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#services">
+            Услуги
+          </a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#booking">
+            Записаться
+          </a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#contacts">
+            Конатакты и адрес
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a class="booking__link header__booking__link" href="http://dikidi.ru/1453246?p=1.pi-po" target="_blank"
+    rel="noopener noreferrer">Записаться</a>
+  </div>
+  </header>
+
   <main class="main">
+
     <section class="hero">
-      <h2>Студия миофасциаольной коррекции</h2>
-      <h1>Основа</h1>
+      <div>
+      <h2 class="hero__heading">Студия миофасциаольной коррекции</h2>
+      <h1 class="hero__title" data-heading="Основа">Основа</h1>
+    </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)"
+        srcset="images/main-image@1x.webp 1x, images/main-image@2x.webp 2x" width="460" height="600">
+      <source type="image/webp" media="(min-width: 768px)"
+        srcset="images/main-image@1x.webp 1x, images/main-image@2x.webp 2x" width="306" height="400">
+
+      <source type="image/jpg" media="(min-width: 1440px)"
+        srcset="images/main-image@1x.jpg 1x, images/main-image@2x.jpg 2x" width="460" height="600">
+      <img class="hero__image" media="(min-width: 768px)"
+      src="images/main-image@1x.jpg" srcset="images/main-image@2x.jpg" width="306" height="400" alt="">
+      </picture>
     </section>
-    <section class="services">
-      <h2>website coming soon</h2>
-      </section>
+
+    <section class="gallery" id="gallery">
+      <h2 class="visually-hidden">Студия миофасциаольной коррекции Основа</h2>
+      <div class="swiper gallery__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-1@1x.webp 1x, images/swiper-slide-1@2x.webp 2x"
+                width="245" height="360">
+
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-1@1x.jpg 1x, images/swiper-slide-1@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-1@1x.jpg" srcset="images/swiper-slide-3@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-2@1x.webp 1x, images/swiper-slide-2@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-2@1x.webp 1x, images/swiper-slide-2@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-2@1x.webp 1x, images/swiper-slide-2@2x.webp 2x"
+                width="245" height="360">
+
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-2@1x.jpg 1x, images/swiper-slide-2@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-2@1x.jpg 1x, images/swiper-slide-2@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-2@1x.jpg" srcset="images/swiper-slide-2@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-3@1x.webp 1x, images/swiper-slide-3@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-3@1x.webp 1x, images/swiper-slide-3@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-3@1x.webp 1x, images/swiper-slide-3@2x.webp 2x"
+                width="245" height="360">
+
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-3@1x.jpg 1x, images/swiper-slide-3@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-3@1x.jpg 1x, images/swiper-slide-3@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-3@1x.jpg" srcset="images/swiper-slide-3@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-4@1x.webp 1x, images/swiper-slide-4@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-4@1x.webp 1x, images/swiper-slide-4@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-4@1x.webp 1x, images/swiper-slide-4@2x.webp 2x"
+                width="245" height="360">
+
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-4@1x.jpg 1x, images/swiper-slide-4@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-4@1x.jpg 1x, images/swiper-slide-4@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-4@1x.jpg" srcset="images/swiper-slide-4@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-5@1x.webp 1x, images/swiper-slide-5@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-5@1x.webp 1x, images/swiper-slide-5@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-5@1x.webp 1x, images/swiper-slide-5@2x.webp 2x"
+                width="245" height="360">
+
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-5@1x.jpg 1x, images/swiper-slide-5@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-5@1x.jpg 1x, images/swiper-slide-5@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-5@1x.jpg" srcset="images/swiper-slide-5@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-6@1x.webp 1x, images/swiper-slide-6@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-6@1x.webp 1x, images/swiper-slide-6@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-6@1x.webp 1x, images/swiper-slide-6@2x.webp 2x"
+                width="245" height="360">
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-6@1x.jpg 1x, images/swiper-slide-6@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-6@1x.jpg 1x, images/swiper-slide-6@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-6@1x.jpg" srcset="images/swiper-slide-6@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-7@1x.webp 1x, images/swiper-slide-7@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-7@1x.webp 1x, images/swiper-slide-7@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-7@1x.webp 1x, images/swiper-slide-7@2x.webp 2x"
+                width="245" height="360">
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-7@1x.jpg 1x, images/swiper-slide-7@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-7@1x.jpg 1x, images/swiper-slide-7@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-7@1x.jpg" srcset="images/swiper-slide-7@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-8@1x.webp 1x, images/swiper-slide-8@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-8@1x.webp 1x, images/swiper-slide-8@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-8@1x.webp 1x, images/swiper-slide-8@2x.webp 2x"
+                width="245" height="360">
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-8@1x.jpg 1x, images/swiper-slide-8@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-8@1x.jpg 1x, images/swiper-slide-8@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-8@1x.jpg" srcset="images/swiper-slide-8@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-9@1x.webp 1x, images/swiper-slide-9@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-9@1x.webp 1x, images/swiper-slide-9@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-9@1x.webp 1x, images/swiper-slide-9@2x.webp 2x"
+                width="245" height="360">
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-9@1x.jpg 1x, images/swiper-slide-9@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-9@1x.jpg 1x, images/swiper-slide-9@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-9@1x.jpg" srcset="images/swiper-slide-9@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-10@1x.webp 1x, images/swiper-slide-10@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-10@1x.webp 1x, images/swiper-slide-10@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-10@1x.webp 1x, images/swiper-slide-10@2x.webp 2x"
+                width="245" height="360">
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-10@1x.jpg 1x, images/swiper-slide-10@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-10@1x.jpg 1x, images/swiper-slide-10@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-10@1x.jpg" srcset="images/swiper-slide-10@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-11@1x.webp 1x, images/swiper-slide-11@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-11@1x.webp 1x, images/swiper-slide-11@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-11@1x.webp 1x, images/swiper-slide-11@2x.webp 2x"
+                width="245" height="360">
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-11@1x.jpg 1x, images/swiper-slide-11@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-11@1x.jpg 1x, images/swiper-slide-11@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-11@1x.jpg" srcset="images/swiper-slide-11@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+          <div class="swiper-slide">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-12@1x.webp 1x, images/swiper-slide-12@2x.webp 2x" width="409" height="600">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/swiper-slide-12@1x.webp 1x, images/swiper-slide-12@2x.webp 2x" width="286" height="420">
+              <source type="image/webp" srcset="images/swiper-slide-12@1x.webp 1x, images/swiper-slide-12@2x.webp 2x"
+                width="245" height="360">
+              <source type="image/jpg" media="(min-width: 1440px)"
+                srcset="images/swiper-slide-12@1x.jpg 1x, images/swiper-slide-12@2x.jpg 2x" width="409" height="600">
+              <source type="image/jpg" media="(min-width: 768px)"
+                srcset="images/swiper-slide-12@1x.jpg 1x, images/swiper-slide-12@2x.jpg 2x" width="286" height="420">
+              <img class="gallery__swiper-image" src="images/swiper-slide-12@1x.jpg" srcset="images/swiper-slide-12@2x.jpg"
+                width="245" height="360" alt="">
+            </picture>
+          </div>
+
+        </div>
+
+        <div class="gallery__button swiper-button-prev"></div>
+        <div class="gallery__button swiper-button-next"></div>
+
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div>
+      <h2 class="services__heading">Массаж</h2>
+      <ul class="services__massage">
+        <li class="services__massage-item">Классический</li>
+        <li class="services__massage-item">Миофасциальный</li>
+        <li class="services__massage-item">Лифтинг</li>
+        <li class="services__massage-item">Аппаратный</li>
+        <li class="services__massage-item">Антицеллюлитный</li>
+        <li class="services__massage-item">Обучение</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="services__heading">Тренировки</h2>
+      <ul class="services__fitness">
+        <li class="services__fitness-item">Фитнес для мам с детьми
+          <ul class="services__fitness-sublist">
+            <li class="services__fitness-sublist-item">Послеродовое восстановление</li>
+            <li class="services__fitness-sublist-item">Восстановление осанки</li>
+            <li class="services__fitness-sublist-item">Восстановление тазового дна</li>
+            <li class="services__fitness-sublist-item">Плоский живот</li>
+            <li class="services__fitness-sublist-item">Формирование мышечного рельефа</li>
+          </ul>
+        </li>
+        <li class="services__fitness-item">Индивидуальные и групповые занятия</li>
+      </ul>
+    </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <h2 class="booking__heading">Подарите себе заботу и гармонию!</h2>
+      <h3 class="booking__subheading">Выберите услугу и запишитесь сейчас.</h3>
+      <a class="booking__link" href="http://dikidi.ru/1453246?p=1.pi-po" target="_blank"
+        rel="noopener noreferrer">Записаться</a>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <h2 class="contacts__heading">
+        Контакты
+      </h2>
+      <div class="contacts__wrapper">
+      <ul class="contacts__list">
+        <li class="contacts__list-item contacts__list-item--phone">
+          <h3 class="contacts__list-title">Телефон:</h3>
+          <a class="contacts__list-description contacts__list-description-phone" href="tel:+79515475118">
+            +7 951 547-51-18
+            <span class="visually-hidden">телефон для связи</span>
+          </a>
+        </li>
+        <li class="contacts__list-item contacts__list-item--address">
+          <h3 class="contacts__list-title">Адрес:</h3>
+          <a class="contacts__list-description" href="https://yandex.ru/maps/?text=Воронеж,+Владимира+Невского,+25/2"
+            target="_blank" rel="noopener noreferrer">
+            Владимира Невского, 25/2
+          </a>
+        </li>
+      </ul>
+
+
+
+      <ul class="contacts__social-list">
+        <li class="contacts__social-list-item">
+          <a class="contacts__social-list-link contacts__social-list-link--vk" href="https://vk.com/osnova_kinesiovrn"
+            target="_blank" rel="noopener noreferrer">
+            <span class="visually-hidden">ссылка на Вконтакте</span>
+          </a>
+        </li>
+        <li class="contacts__social-list-item">
+          <a class="contacts__social-list-link contacts__social-list-link--telegram" href="https://t.me/irinankolimee"
+            target="_blank" rel="noopener noreferrer">
+            <span class="visually-hidden">ссылка на Телеграм</span>
+          </a>
+        </li>
+        <li class="contacts__social-list-item">
+          <a class="contacts__social-list-link contacts__social-list-link--instagram"
+            href="https://www.instagram.com/osnova_kinesiovrn?igsh=MXdtbGhrYnR1bWZvNg==" target="_blank"
+            rel="noopener noreferrer">
+            <span class="visually-hidden">ссылка на Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+      <div class="contacts__location">
+        <div style="position:relative;overflow:hidden;">
+          <iframe class="contacts__location-map"
+            src="https://yandex.com/map-widget/v1/?ll=39.159587%2C51.716678&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzg4MjI1MxJS0KDQvtGB0YHQuNGPLCDQktC-0YDQvtC90LXQtiwg0YPQu9C40YbQsCDQktC70LDQtNC40LzQuNGA0LAg0J3QtdCy0YHQutC-0LPQviwgMjUvMiIKDXajHEIVxN1OQg%2C%2C&z=17.52"
+            width="320" height="362" allowfullscreen="true" style="position:relative;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <picture>
+<!-- do not forget -->
+          </picture>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <section class="footer">
+    <h2 class="visually-hidden">подвал сайта</h2>
+    <ul class="footer__contacts-list">
+      <li class="footer__contacts-item footer__contacts-item--address">
+        <a class="footer__contacts-description" href="https://yandex.ru/maps/?text=Воронеж,+Владимира+Невского,+25/2"
+          target="_blank" rel="noopener noreferrer">
+          Владимира Невского, 25/2
+          <span class="visually-hidden">адрес</span>
+        </a>
+      </li>
+      <li class="footer__contacts-item footer__contacts-item--phone">
+        <a class="footer__contacts-description footer__contacts-description-phone" href="tel:+79515475118">
+          +7 951 547-51-18
+          <span class="visually-hidden">телефон для связи</span>
+        </a>
+      </li>
+      <li class="footer__contacts-item">
+        <a class="footer__contacts-link" href="https://vk.com/osnova_kinesiovrn"
+        target="_blank" rel="noopener noreferrer">osnova_kinesiovrn</a>
+      </li>
+    </ul>
+  </section>
+
 </body>
 
 </html>

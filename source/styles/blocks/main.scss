@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  flex-grow: 1;
+  position: relative;
+  min-width: 320px;
+  max-width: 320px;
+  margin: 0 auto;
+  align-content: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
+}
+
+// background-color: #337c86;
+// // background-image: linear-gradient(to left, #337c86, #5ba9b2);
+// background: linear-gradient(to right, #337c86, #1f4f56);
+
+// // background: linear-gradient(to right, #337c86, #ff6f61);
+
+// background: linear-gradient(135deg, #337c86, #27506c, #63b5ba);
+
+// // background: linear-gradient(to left, #337c86, #d4af37);
+
+// // background: linear-gradient(to right, #337c86, #a3d9cf);
+// background: linear-gradient(to right, #337c86 20%, #ff6f61 109%);
+// background-image: linear-gradient(-260deg, #337c86 0%, #884D80 100%);     //+
+// background-image: linear-gradient(-225deg, #473B7B 0%, #337c86 51%, #3584A7 100%); //+
