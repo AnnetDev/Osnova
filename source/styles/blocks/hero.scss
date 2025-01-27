@@ -7,7 +7,6 @@
     position: absolute;
     content: "";
     width: 100vw;
-    max-width: 1440px;
     height: 1px;
     background-color: #bccaca;
     bottom: 0;
@@ -20,6 +19,11 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 60px;
+
   }
 }
 
@@ -52,6 +56,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 45px;
+    line-height: 55px;
+    margin: 0 0 20px;
   }
 }
 
@@ -62,7 +69,7 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 65px;
-  margin: 0;
+  margin: 0 0 15px;
   padding: 0;
   width: 280px;
   position: relative;
@@ -82,6 +89,56 @@
       top: -26px;
       text-align: center;
       letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 90px;
+    line-height: 100px;
+    margin: 0 0 30px;
+
+    &::before {
+      font-size: 110px;
+      line-height: 120px;
+    }
+  }
+}
+
+.hero__address-link.contacts__list-description {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+  position: relative;
+  padding: 6px 6px 6px 25px;
+  padding-left: 30px;
+  // border: solid 1px #BCCACA;
+  border-radius: 7px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bccaca;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    mask: url(../../icons/location.svg) no-repeat center;
+    background-color: #ffffff;
+    left: 3px;
+    top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 6px 6px 6px 35px;
+
+    &::after {
+      width: 25px;
+      height: 25px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }

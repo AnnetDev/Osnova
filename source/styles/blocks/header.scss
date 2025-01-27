@@ -5,6 +5,8 @@
   align-items: center;
   padding: 20px;
   min-width: 320px;
+  width: 100vw;
+  align-self: center;
   background-color: #403270;
   position: relative;
 
@@ -12,7 +14,7 @@
     position: absolute;
     content: "";
     width: 100vw;
-    max-width: 1440px;
+    // max-width: 1440px;
     height: 1px;
     background-color: #bccaca;
     bottom: 0;
@@ -23,21 +25,33 @@
   @media (min-width: $tablet-width) {
     padding: 30px 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 60px;
+    width: 100vw;
+    align-self: center;
+
+  }
 }
 
 .header__wrapper {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
+  // width: 100%;
+  width: 320px;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 320px;
+  max-width: 280px;
+
   @media (min-width: $tablet-width) {
+    width: 678px;
     max-width: 768px;
   }
   @media (min-width: $desktop-width) {
+    width: 1400px;
     max-width: 1440px;
+    padding: 0 60px;
   }
 }
 
@@ -45,13 +59,24 @@
   padding: 10px 10px 10px 30px;
   font-size: 13px;
   width: 150px;
-  // box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.6);
 
   &::after {
     width: 20px;
     height: 20px;
     left: 10px;
+
+    @media (min-width: $desktop-width) {
+      width: 25px;
+      height: 25px;
+      left: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 15px 15px 30px;
+    font-size: 16px;
+    width: 200px;
   }
 }
 
@@ -67,10 +92,17 @@
   padding: 20px;
   transition: all 0.3s ease;
   padding: 20px;
-justify-content: center;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: static;
+    width: 700px;
+    padding: 0;
   }
 }
 
@@ -89,10 +121,12 @@ justify-content: center;
   align-content: flex-start;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 678px;
   }
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    flex-flow: row wrap;
+    width: 1320px;
+    gap: 40px;
   }
 }
 
@@ -117,6 +151,10 @@ justify-content: center;
   display: block;
   position: relative;
   transition: transform 0.3s ease;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .header__toggle::before,

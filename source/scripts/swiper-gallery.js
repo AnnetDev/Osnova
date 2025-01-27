@@ -29,11 +29,12 @@ export function initializeGallerySwiper() {
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
-        // slidesOffsetAfter: 30,
       },
       1440: {
-        slidesPerView: 2,
-        // spaceBetween: 120,
+        slidesPerView: 3,
+        // spaceBetween: 30,
+        // slidesOffsetAfter: -30,
+
       },
     },
   });

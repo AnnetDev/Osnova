@@ -13,6 +13,12 @@
     margin: 0 auto;
     justify-content: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1350px;
+
+  }
+
 }
 
 .swiper-wrapper {
@@ -26,6 +32,12 @@
     width: 708px;
     padding: 0;
     // margin: 0 auto;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 0 20px;
     // justify-content: center;
 
   }
@@ -89,6 +101,11 @@ justify-content: center;
     height: 25px
   }
 
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 35px
+  }
+
 }
 
 .gallery__button.swiper-button-next {
@@ -101,6 +118,10 @@ justify-content: center;
       right: -5px;
 
     }
+
+    @media (min-width: $desktop-width) {
+      right: -15px;
+    }
 }
 
 .gallery__button.swiper-button-prev {
@@ -111,7 +132,9 @@ justify-content: center;
     left: 0;
     @media (min-width: $tablet-width) {
       left: -5px;
-
+    }
+    @media (min-width: $desktop-width) {
+      left: -15px;
     }
   }
 
