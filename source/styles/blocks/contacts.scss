@@ -87,6 +87,8 @@
     padding: 0 0 0 40px;
     gap: 30px;
   }
+
+
 }
 
 .contacts__list-item--phone::after {
@@ -104,6 +106,12 @@
     width: 30px;
     height: 30px;
   }
+}
+
+.contacts__list-item--phone:hover:after {
+  // -webkit-animation: wiggle .05s alternate ease infinite;
+  animation: wiggle .05s alternate ease infinite;
+  // transform: skew(-20deg);
 }
 
 .contacts__list-item--address::after {
@@ -129,15 +137,38 @@
   color: #d3e1e1;
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   font-size: 14px;
   line-height: 18px;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
     line-height: 26px;
   }
+
+  &:hover {
+    text-shadow: 0 0 4px #ffffff;
+    color: #ffffff;
+    // box-shadow: 0 0 4px 3px #ffffff;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    text-shadow: 0 0 1px #ffffff;
+    outline: none;
+    box-shadow: 0 0 4px 3px #ffffff;
+    border-radius: 7px;
+  }
+
+  &:active {
+    opacity: 50%;
+    box-shadow: none;
+  }
+
+
 }
 
 .contacts__social-list {
@@ -161,13 +192,31 @@
   padding: 5px;
   background-image: linear-gradient(-23deg, #537895 40%, #56317a 100%);
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
 
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 70px;
-    padding: 10px;
-
+    // padding: 10px;
   }
+
+  &:hover {
+    box-shadow: 0 0 4px 3px #ffffff;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    text-shadow: 0 0 1px #ffffff;
+    outline: none;
+    box-shadow: 0 0 4px 3px #ffffff;
+  }
+
+  &:active {
+    opacity: 50%;
+    box-shadow: none;
+  }
+
 }
 
 .contacts__social-list-link {
@@ -176,17 +225,37 @@
   height: 100%;
   background-color: #d3e1e1;
 
+
   &--vk {
     mask: url(../../icons/vk.svg) no-repeat center;
+    mask-size: 90%;
   }
 
   &--telegram {
     mask: url(../../icons/telegram.svg) no-repeat center;
+    mask-size: 80%;
   }
   &--instagram {
     mask: url(../../icons/instagram.svg) no-repeat center;
+    mask-size: 80%;
   }
 }
+
+// .contacts__social-list-link--vk:hover,
+// .contacts__social-list-link--vk:focus,
+// .contacts__social-list-link--vk:focus-visible,
+// .contacts__social-list-link--vk:focus-within,
+// .contacts__social-list-link--telegram:hover,
+// .contacts__social-list-link--telegram:focus,
+// .contacts__social-list-link--telegram:focus-visible,
+// .contacts__social-list-link--telegram:focus-within,
+// .contacts__social-list-link--instagram:hover,
+// .contacts__social-list-link--instagram:focus,
+// .contacts__social-list-link--instagram:focus-visible,
+// .contacts__social-list-link--instagram:focus-within {
+//     background-color: #ffffff;
+// }
+
 
 .contacts__location {
   margin: 0 calc((100% - 320px) / 2);
@@ -210,7 +279,7 @@
   height: 362px;
   position: relative;
   transition: width 0.3s ease;
-  border-radius: 7px;
+  // border-radius: 7px;
 
   @media (min-width: $tablet-width) {
     width: 768px;

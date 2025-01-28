@@ -60,6 +60,7 @@
   width: 25px;
   height: 360px;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -74,6 +75,23 @@
     bottom: 40px;
     border: solid 1px #bccaca;
     border-radius: 50%;
+  }
+
+  &:hover {
+    outline: none;
+    box-shadow: 0 0 4px 3px #ffffff;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    outline: none;
+    box-shadow: 0 0 4px 3px #ffffff;
+  }
+
+  &:active {
+    opacity: 50%;
+    box-shadow: none;
   }
 }
 
@@ -134,4 +152,15 @@
     width: 35px;
     height: 35px;
   }
+}
+
+.gallery__button.swiper-button-prev:hover::after,
+.gallery__button.swiper-button-prev:focus::after,
+.gallery__button.swiper-button-prev:focus-visible::after,
+.gallery__button.swiper-button-prev:focus-within::after,
+.gallery__button.swiper-button-next:hover::after,
+.gallery__button.swiper-button-next:focus::after,
+.gallery__button.swiper-button-next:focus-visible::after,
+.gallery__button.swiper-button-next:focus-within::after {
+  background-color: #ffffff;
 }

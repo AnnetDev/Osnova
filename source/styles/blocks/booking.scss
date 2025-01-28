@@ -81,7 +81,7 @@
 }
 
 .booking__link {
-  display: block;
+  display: flex;
   padding: 15px 15px 15px 35px;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
   color: #d3e1e1;
@@ -89,7 +89,6 @@
   text-transform: uppercase;
   border-radius: 7px;
   font-size: 16px;
-  // letter-spacing: 1px;
   line-height: 22px;
   font-weight: 500;
   background-image: linear-gradient(-45deg, #874da2 28%, #473b7b 100%);
@@ -97,6 +96,30 @@
   width: 200px;
   text-align: center;
   position: relative;
+  transition: all 0.5 ease;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    text-shadow: 0 0 4px #ffffff;
+    color: #ffffff;
+    box-shadow: 0 0 4px 3px #ffffff;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    text-shadow: 0 0 1px #ffffff;
+    outline: none;
+    box-shadow: 0 0 4px 3px #ffffff;
+    border-radius: 7px;
+  }
+
+  &:active {
+    opacity: 50%;
+    box-shadow: none;
+  }
 
   &::after {
     position: absolute;
@@ -108,6 +131,8 @@
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
 
     @media (min-width: $desktop-width) {
       width: 35px;
@@ -125,5 +150,14 @@
     width: 300px;
     font-size: 22px;
     line-height: 28px;
+  }
+}
+
+.booking__link:hover::after,
+.booking__link:focus::after,
+.booking__link:focus-visible::after,
+.booking__link:focus-within::after {
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
   }
 }

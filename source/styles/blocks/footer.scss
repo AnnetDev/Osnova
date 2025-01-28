@@ -66,6 +66,7 @@ align-items: center;
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
+  padding: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -76,6 +77,27 @@ align-items: center;
     font-size: 18px;
     line-height: 20px;
   }
+
+  &:hover {
+    text-shadow: 0 0 4px #ffffff;
+    color: #ffffff;
+    // box-shadow: 0 0 4px 3px #ffffff;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    text-shadow: 0 0 1px #ffffff;
+    outline: none;
+    box-shadow: 0 0 4px 3px #ffffff;
+    border-radius: 7px;
+  }
+
+  &:active {
+    opacity: 50%;
+    box-shadow: none;
+  }
+
 
 }
 
