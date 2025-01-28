@@ -1,45 +1,27 @@
-
 .swiper.gallery__swiper {
-  position: relative;
   display: flex;
   width: 100%;
   overflow: hidden;
   justify-content: center;
   margin: 0;
   padding: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1350px;
-
-  }
-
+  align-self: center;
 }
 
 .swiper-wrapper {
   display: flex;
   flex-wrap: nowrap;
   transition: transform 0.3s ease;
-  width: 285px;
-  padding: 0 20px;
+  width: 280px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 768px;
     padding: 0;
-    // margin: 0 auto;
-
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
-    padding: 0 20px;
-    // justify-content: center;
-
+    width: 1320px;
   }
 }
 
@@ -49,11 +31,11 @@
   height: auto;
   display: flex;
   margin: 0 auto;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
-justify-content: center;
-  width: 286px;
-}
+    width: 286px;
+  }
 }
 
 .gallery__swiper-image {
@@ -62,24 +44,7 @@ justify-content: center;
   padding: 0;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
 }
-
-// .swiper-navigation {
-//   display: flex;
-//   margin: 0;
-//   padding: 0;
-//   gap: 4px;
-//   position: absolute;
-//   content: "";
-//   width: 100px;
-//   height: 50px;
-//   // top: -65px;
-//   // right: 0;
-//   z-index: 1;
-//   justify-content: flex-end;
-//   border: red solid 3px;
-// }
 
 .gallery__button.swiper-button-next,
 .gallery__button.swiper-button-prev {
@@ -88,53 +53,85 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
-  // border: orange solid 3px;;
   top: 50%;
   transform: translateY(-50%);
   margin: 0;
   padding: 0;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 360px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 25px;
-    height: 25px
+    width: 30px;
+    height: 420px;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 35px;
-    height: 35px
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 60px;
+    top: unset;
+    transform: unset;
+    bottom: 40px;
+    border: solid 1px #bccaca;
+    border-radius: 50%;
   }
-
 }
 
 .gallery__button.swiper-button-next {
-    content: "";
-    mask: url(../../icons/arrow-right.svg) no-repeat center;
-    background-color: #bccaca;
-    background-size: contain;
-    right: 0;
-    @media (min-width: $tablet-width) {
-      right: -5px;
+  right: 0;
 
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -15px;
-    }
+  @media (min-width: $desktop-width) {
+    right: 44%;
+    transform: translateX(-44%);
+    padding: 10px 12px 10px 15px;
+  }
 }
 
 .gallery__button.swiper-button-prev {
-    content: "";
-    mask: url(../../icons/arrow-left.svg) no-repeat center;
-    background-color: #bccaca;
-    background-size: contain;
-    left: 0;
-    @media (min-width: $tablet-width) {
-      left: -5px;
-    }
-    @media (min-width: $desktop-width) {
-      left: -15px;
-    }
+  left: 0;
+
+  @media (min-width: $desktop-width) {
+    left: 44%;
+    transform: translateX(-44%);
+    padding: 10px 15px 10px 10px;
+
+  }
+}
+
+.gallery__button.swiper-button-next::after {
+  content: "";
+  mask: url(../../icons/arrow-right.svg) no-repeat center;
+  background-color: #bccaca;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.gallery__button.swiper-button-prev::after {
+  content: "";
+  mask: url(../../icons/arrow-left.svg) no-repeat center;
+  background-color: #bccaca;
+  background-size: contain;
+  // left: 0;
+  width: 25px;
+  height: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -2,13 +2,14 @@
   padding: 20px 20px 0;
   font-family: $project-font;
   position: relative;
-  margin: 0 auto;
+  align-self: center;
+
 
   &::before {
     position: absolute;
     content: "";
     width: 100vw;
-    // max-width: 1440px;
+    min-width: 320px;
     height: 1px;
     background-color: #bccaca;
     bottom: 0;
@@ -17,7 +18,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 30px 45px;
+    width: 768px;
+    padding: 30px 45px 0;
   }
 }
 
@@ -142,11 +144,11 @@
 }
 
 .contacts__location {
-  margin: 0 calc(50% - 160px);
+  margin: 0 calc((100% - 320px) / 2);
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 700px;
+    margin: 0 calc((100% - 768px) / 2);
+    width: 768px;
   }
   @media (min-width: $desktop-width) {
     width: 1000px;
@@ -155,7 +157,7 @@
 
 .contacts__location-map {
   display: block;
-  margin: 0 calc((100% - 320px) / 2);
+  // margin: 0 calc((100% - 320px) / 2);
   padding: 0;
   border: none;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
@@ -165,9 +167,9 @@
   transition: width 0.3s ease; /* Для плавной анимации при изменении размеров */
 
   @media (min-width: $tablet-width) {
-    width: 700px;
+    width: 768px;
     min-height: 400px;
-    margin: 0 calc((100% - 700px) / 2);
+    // margin: 0 calc((100% - 700px) / 2);
   }
 
   @media (min-width: $desktop-width) {

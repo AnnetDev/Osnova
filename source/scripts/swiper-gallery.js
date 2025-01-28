@@ -15,10 +15,7 @@ export function initializeGallerySwiper() {
       nextEl: '.gallery__button.swiper-button-next',
       prevEl: '.gallery__button.swiper-button-prev',
     },
-    // slidesPerView: 1, // Отображать 1 слайд на экране
-    // spaceBetween: 20,
     slidesPerGroup: 1,
-    // slidesPerView: 'auto',
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -28,13 +25,11 @@ export function initializeGallerySwiper() {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
       1440: {
         slidesPerView: 3,
-        // spaceBetween: 30,
-        // slidesOffsetAfter: -30,
-
+        spaceBetween: 40,
       },
     },
   });

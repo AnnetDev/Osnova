@@ -1,14 +1,16 @@
 .services {
+  width: 320px;
   padding: 20px;
   font-family: $project-font;
   color: #d3e1e1;
   position: relative;
+  align-self: center;
 
   &::before {
     position: absolute;
     content: "";
     width: 100vw;
-    // max-width: 1440px;
+    min-width: 320px;
     height: 1px;
     background-color: #bccaca;
     bottom: 0;
@@ -17,10 +19,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     padding: 30px 45px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
   }
 
 }
