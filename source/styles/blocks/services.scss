@@ -5,7 +5,6 @@
   color: #d3e1e1;
   position: relative;
   align-self: center;
-  align-items: center;
 
   &::before {
     position: absolute;
@@ -31,6 +30,7 @@
     width: 1440px;
     padding: 40px 60px;
     // justify-content: space-evenly;
+    align-items: center;
   }
 }
 

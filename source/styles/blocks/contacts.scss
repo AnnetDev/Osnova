@@ -163,8 +163,10 @@
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.7);
 
   @media (min-width: $desktop-width) {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+
   }
 }
 
@@ -208,6 +210,7 @@
   height: 362px;
   position: relative;
   transition: width 0.3s ease;
+  border-radius: 7px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
