@@ -2,12 +2,13 @@
   padding: 20px;
   position: relative;
   font-family: $project-font;
+  align-self: center;
 
   &::before {
     position: absolute;
     content: "";
+    min-width: 320px;
     width: 100vw;
-    max-width: 1440px;
     height: 1px;
     background-color: #bccaca;
     bottom: 0;
@@ -20,6 +21,12 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 60px;
+    width: 1440px;
   }
 }
 
@@ -31,6 +38,8 @@
     border-radius: 4px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   }
+
+
 }
 
 .hero__heading {
@@ -49,9 +58,14 @@
     font-size: 28px;
     line-height: 38px;
     margin: 0 0 20px;
+    width: 320px;
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 52px;
+    line-height: 64px;
+    margin: 0 0 20px;
+    width: 610px;
   }
 }
 
@@ -62,7 +76,7 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 65px;
-  margin: 0;
+  margin: 0 0 15px;
   padding: 0;
   width: 280px;
   position: relative;
@@ -70,18 +84,104 @@
   @media (min-width: $tablet-width) {
     font-size: 68px;
     line-height: 75px;
+    width: 320px;
 
     &::before {
       position: absolute;
       content: attr(data-heading);
-      font-size: 75px;
+      font-size: 70px;
       line-height: 80px;
       opacity: 3%;
       left: 0;
-      // transform: translateX(-50%);
       top: -26px;
       text-align: center;
       letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 97px;
+    line-height: 110px;
+    margin: 0 0 30px;
+    width: 600px;
+
+    &::before {
+      font-size: 115px;
+      line-height: 130px;
+    }
+  }
+}
+
+.hero__address-link.contacts__list-description {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+  position: relative;
+  padding: 6px 6px 6px 30px;
+  // border: solid 1px #BCCACA;
+  border-radius: 7px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bccaca;
+  margin: 0 0 20px;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    mask: url(../../icons/location.svg) no-repeat center;
+    background-color: #ffffff;
+    left: 3px;
+    top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 6px 6px 6px 35px;
+    margin: 0 0 30px;
+
+    &::after {
+      width: 25px;
+      height: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.hero__phone-link.contacts__list-description.contacts__list-description-phone {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 6px 6px 6px 30px;
+  font-size: 14px;
+  line-height: 18px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    mask: url(../../icons/whatsapp.svg) no-repeat center;
+    background-color: #ffffff;
+    left: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 6px 6px 6px 35px;
+    &::after {
+      width: 25px;
+      height: 25px;
     }
   }
 }

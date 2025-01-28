@@ -2,9 +2,19 @@
   padding: 20px;
   font-family: $project-font;
   letter-spacing: 0;
+
   min-width: 320px;
-  max-width: 1440px;
+  // max-width: 1440px;
   background-color: #403270;
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 45px;
+  }
 }
 
 .footer__contacts-list {
@@ -15,6 +25,17 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 20px 15px;
+  align-self: center;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+  }
 }
 
 .footer__contacts-item {

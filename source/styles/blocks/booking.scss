@@ -1,5 +1,5 @@
 .booking {
-  padding: 20px 0;
+  padding: 20px;
   font-family: $project-font;
   display: flex;
   flex-flow: column wrap;
@@ -7,19 +7,22 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  align-self: center;
+
 
   &::before {
     position: absolute;
     content: "";
+    min-width: 320px;
     width: 100vw;
     height: 1px;
     background-color: #bccaca;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1440px;
   }
   @media (min-width: $tablet-width) {
+    width: 768px;
     padding: 30px 45px;
   }
 }

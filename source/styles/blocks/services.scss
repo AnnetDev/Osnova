@@ -1,14 +1,16 @@
 .services {
+  width: 320px;
   padding: 20px;
   font-family: $project-font;
   color: #d3e1e1;
   position: relative;
+  align-self: center;
 
   &::before {
     position: absolute;
     content: "";
     width: 100vw;
-    max-width: 1440px;
+    min-width: 320px;
     height: 1px;
     background-color: #bccaca;
     bottom: 0;
@@ -17,26 +19,38 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     padding: 30px 45px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 40px 60px;
+    justify-content: space-evenly;
+  }
 }
 
 .services__heading {
-  // display: flex;
-  // flex-flow: column wrap;
   margin: 0 0 10px;
   padding: 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
+
   @media (min-width: $tablet-width) {
     margin: 0 0 20px;
     font-size: 26px;
     line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 30px;
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
   }
 }
 
@@ -47,6 +61,12 @@
   list-style: none;
   margin: 0 0 20px;
   padding: 0 0 0 30px;
+
+  @media (min-width: $desktop-width) {
+    gap: 25px;
+    margin: 0;
+    padding: 0 0 0 45px;
+  }
 }
 
 .services__massage-item {
@@ -60,9 +80,19 @@
     width: 15px;
     height: 15px;
     background-color: #bccaca;
-    // top: 50%;
-    // transform: translateY(-50%);
     left: -25px;
+
+    @media (min-width: $desktop-width) {
+      width: 25px;
+      height: 25px;
+      left: -35px;
+      top: -5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 26px;
   }
 }
 
@@ -73,6 +103,12 @@
   list-style: none;
   margin: 0 0 20px;
   padding: 0 0 0 30px;
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    margin: 0;
+    padding: 0 0 0 45px;
+  }
 }
 
 .services__fitness-item {
@@ -86,9 +122,19 @@
     width: 15px;
     height: 15px;
     background-color: #bccaca;
-    // top: 50%;
-    // transform: translateY(-50%);
     left: -25px;
+
+    @media (min-width: $desktop-width) {
+      width: 25px;
+      height: 25px;
+      left: -35px;
+      top: -5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 26px;
   }
 }
 
@@ -99,6 +145,11 @@
   gap: 10px;
   list-style: none;
 
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .services__fitness-sublist-item {
