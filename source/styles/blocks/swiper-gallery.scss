@@ -52,7 +52,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
   top: 50%;
   transform: translateY(-50%);
   margin: 0;
@@ -91,7 +90,8 @@
     outline: none;
 
     @media (min-width: $desktop-width) {
-    box-shadow: 0 0 4px 3px #ffffff;}
+      box-shadow: 0 0 4px 3px #ffffff;
+    }
   }
 
   &:active {
@@ -122,13 +122,12 @@
 
 .gallery__button.swiper-button-next::after {
   content: "";
-  mask: url(../../icons/arrow-right.svg) no-repeat center;
+  mask: url("../../icons/arrow-right.svg") no-repeat center;
   background-color: #bccaca;
   background-size: contain;
   width: 25px;
   height: 25px;
   transition: all 0.3s ease;
-
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -143,7 +142,7 @@
 
 .gallery__button.swiper-button-prev::after {
   content: "";
-  mask: url(../../icons/arrow-left.svg) no-repeat center;
+  mask: url("../../icons/arrow-left.svg") no-repeat center;
   background-color: #bccaca;
   background-size: contain;
   width: 25px;
@@ -154,6 +153,7 @@
     width: 30px;
     height: 30px;
   }
+
   @media (min-width: $desktop-width) {
     width: 35px;
     height: 35px;
@@ -171,10 +171,12 @@
   background-color: #ffffff;
   width: 28px;
   height: 28px;
+
   @media (min-width: $tablet-width) {
     width: 35px;
     height: 35px;
   }
+
   @media (min-width: $desktop-width) {
     width: 38px;
     height: 38px;
