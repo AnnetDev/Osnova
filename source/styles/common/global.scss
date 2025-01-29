@@ -6,7 +6,7 @@
 
 html {
   height: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   scroll-behavior: smooth;
 }
 
@@ -19,7 +19,13 @@ body {
   align-self: center;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(-225deg, #473B7B 0%, #337c86 51%, #3584A7 100%);
+  background-image:
+    linear-gradient(
+      -225deg,
+      #473b7b 0%,
+      #337c86 51%,
+      #3584a7 100%
+    );
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   color: #d3e1e1;
 }

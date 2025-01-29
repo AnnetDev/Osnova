@@ -226,6 +226,7 @@
     mask: url("../../icons/telegram.svg") no-repeat center;
     mask-size: 80%;
   }
+
   &--instagram {
     mask: url("../../icons/instagram.svg") no-repeat center;
     mask-size: 80%;
@@ -239,6 +240,7 @@
     margin: 0 calc((100% - 768px) / 2);
     width: 768px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1440px;
     margin: 0 calc((100% - 1440px) / 2);

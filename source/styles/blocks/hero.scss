@@ -38,8 +38,6 @@
     border-radius: 4px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   }
-
-
 }
 
 .hero__heading {
@@ -152,7 +150,7 @@
     content: "";
     width: 20px;
     height: 20px;
-    mask: url(../../icons/location.svg) no-repeat center;
+    mask: url("../../icons/location.svg") no-repeat center;
     background-color: #ffffff;
     left: 3px;
     top: 6px;
@@ -207,7 +205,7 @@
     content: "";
     width: 20px;
     height: 20px;
-    mask: url(../../icons/whatsapp.svg) no-repeat center;
+    mask: url("../../icons/whatsapp.svg") no-repeat center;
     background-color: #ffffff;
     left: 3px;
   }
@@ -216,6 +214,7 @@
     font-size: 20px;
     line-height: 22px;
     padding: 6px 6px 6px 35px;
+
     &::after {
       width: 25px;
       height: 25px;

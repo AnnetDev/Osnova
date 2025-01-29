@@ -13,7 +13,6 @@
 .footer__contacts-list {
   display: flex;
   margin: 0;
-  padding: 0;
   list-style: none;
   flex-flow: row wrap;
   justify-content: center;
@@ -94,7 +93,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  mask: url(../../icons/call.svg) no-repeat center;
+  mask: url("../../icons/call.svg") no-repeat center;
   background-color: #ffffff;
 
   @media (min-width: $desktop-width) {
@@ -111,7 +110,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  mask: url(../../icons/location.svg) no-repeat center;
+  mask: url("../../icons/location.svg") no-repeat center;
   background-color: #ffffff;
 
   @media (min-width: $desktop-width) {

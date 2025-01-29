@@ -35,6 +35,7 @@
     width: 768px;
     padding: 30px 45px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 30px 60px;
@@ -76,7 +77,6 @@
   z-index: 1;
   background-color: #403270;
   opacity: 97%;
-  padding: 20px 0;
   transition: all 0.3s ease;
   padding: 20px;
   justify-content: center;
@@ -101,7 +101,6 @@
 .header__navigation-list {
   list-style: none;
   margin: 0;
-  padding: 0;
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
@@ -112,6 +111,7 @@
   @media (min-width: $tablet-width) {
     width: 678px;
   }
+
   @media (min-width: $desktop-width) {
     flex-flow: row wrap;
     width: 1320px;

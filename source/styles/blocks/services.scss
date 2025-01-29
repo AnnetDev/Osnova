@@ -79,7 +79,7 @@
   &::before {
     position: absolute;
     content: "";
-    mask: url(../../icons/check-mark.svg) no-repeat center;
+    mask: url("../../icons/check-mark.svg") no-repeat center;
     width: 15px;
     height: 15px;
     background-color: #bccaca;
@@ -121,7 +121,7 @@
   &::before {
     position: absolute;
     content: "";
-    mask: url(../../icons/check-mark.svg) no-repeat center;
+    mask: url("../../icons/check-mark.svg") no-repeat center;
     width: 15px;
     height: 15px;
     background-color: #bccaca;
@@ -194,6 +194,7 @@
   @media (min-width: $tablet-width) {
     width: 400px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 15px 20px;
     width: 280px;
@@ -220,7 +221,7 @@
   &::before {
     position: absolute;
     content: "";
-    mask: url(../../icons/gift.svg) no-repeat center;
+    mask: url("../../icons/gift.svg") no-repeat center;
     background-color: #d3e1e1;
     left: 50%;
     transform: translateX(-50%);
