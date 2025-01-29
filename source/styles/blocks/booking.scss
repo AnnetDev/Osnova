@@ -97,9 +97,10 @@
   width: 200px;
   text-align: center;
   position: relative;
-  transition: all 0.5 ease;
   align-items: center;
   justify-content: center;
+  transition: all 0.5 ease;
+
 
   &:hover {
     text-shadow: 0 0 4px #ffffff;

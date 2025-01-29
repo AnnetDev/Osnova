@@ -46,6 +46,7 @@
   width: 150px;
   flex-shrink: 0;
   z-index: 1;
+  transition: all 0.3 ease;
 
   &::after {
     width: 20px;
