@@ -3,14 +3,26 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Osnova</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Студия миофасциальной коррекции "Основа" — массаж и тренировки в Воронеже</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Студия миофасциальной коррекции 'Основа' в Воронеже. Классический, миофасциальный, лифтинг и аппаратный массаж. Тренировки для мам, послеродовое восстановление, коррекция осанки. Запишитесь онлайн!">
+  <meta name="keywords" content="массаж Воронеж, миофасциальная коррекция, антицеллюлитный массаж, тренировки для мам, послеродовое восстановление, фитнес для женщин, коррекция осанки, массаж лица, подарочный сертификат на массаж">
+  <meta name="author" content="Студия 'Основа'">
+  <meta property="og:title" content="Студия миофасциальной коррекции 'Основа' — массаж и тренировки в Воронеже">
+  <meta property="og:description" content="Классический, миофасциальный и антицеллюлитный массаж. Послеродовое восстановление, фитнес для мам и тренировки. Запишитесь прямо сейчас!">
+  <!-- <meta property="og:image" content="https://ваш_сайт.ru/images/preview.jpg">превью сайта для ссылок -->
   <!-- change favicon -->
-  <!-- fonts preload -->
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <!-- <meta property="og:url" content="https://ваш_сайт.ru">Если сайт будет на другом домене, укажите его в canonical и og:url. -->
+  <!-- <link rel="canonical" href="https://ваш_сайт.ru">Указывает основной URL сайта. -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/main.js" defer></script>
 </head>
@@ -46,7 +58,7 @@
           </li>
         </ul>
       </nav>
-      <a class="header__booking-link booking__link" href="http://dikidi.ru/1453246?p=1.pi-po" target="_blank"
+      <a class="header__booking-link booking-link" href="http://dikidi.ru/1453246?p=1.pi-po" target="_blank"
         rel="noopener noreferrer">Записаться</a>
     </div>
   </header>
@@ -57,12 +69,12 @@
       <div>
         <h2 class="hero__heading">Студия миофасциальной коррекции</h2>
         <h1 class="hero__title" data-heading="Основа">Основа</h1>
-        <a class="hero__address-link contacts__list-description"
+        <a class="hero__address-link contacts-list-description"
           href="https://yandex.ru/maps/?text=Воронеж,+Владимира+Невского,+25/2" target="_blank"
           rel="noopener noreferrer">
           Воронеж, Владимира Невского, 25/2
         </a>
-        <a class="hero__phone-link contacts__list-description contacts__list-description-phone"
+        <a class="hero__phone-link contacts-list-description contacts-list-description-phone"
           href="https://wa.me/79515475118?text=Здравствуйте,%20я%20хотел%20бы%20узнать%20подробности" target="_blank"
           rel="noopener noreferrer">
           +7 951 547-51-18
@@ -79,7 +91,7 @@
 
         <source type="image/jpg" media="(min-width: 1440px)"
           srcset="images/main-image@1x.jpg 1x, images/main-image@2x.jpg 2x" width="600" height="600">
-        <img class="hero__image" media="(min-width: 768px)" src="images/main-image@1x.jpg"
+        <img class="hero__image" src="images/main-image@1x.jpg"
           srcset="images/main-image@2x.jpg" width="320" height="320" alt="">
       </picture>
     </section>
@@ -407,12 +419,12 @@
         <div style="position:relative;overflow:hidden;">
           <iframe class="contacts__location-map"
             src="https://yandex.com/map-widget/v1/?ll=39.159587%2C51.716678&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzg4MjI1MxJS0KDQvtGB0YHQuNGPLCDQktC-0YDQvtC90LXQtiwg0YPQu9C40YbQsCDQktC70LDQtNC40LzQuNGA0LAg0J3QtdCy0YHQutC-0LPQviwgMjUvMiIKDXajHEIVxN1OQg%2C%2C&z=17.52"
-            width="320" height="362" allowfullscreen="true" style="position:relative;" loading="lazy"
+            width="320" height="362" style="position:relative;" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
-          <picture>
+          <!-- <picture> -->
             <!-- do not forget -->
-          </picture>
+          <!-- </picture> -->
         </div>
       </div>
     </section>

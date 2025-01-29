@@ -80,7 +80,8 @@
   }
 }
 
-.booking__link {
+.booking__link,
+.booking-link {
   display: flex;
   padding: 15px 15px 15px 35px;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
@@ -99,7 +100,6 @@
   transition: all 0.5 ease;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
 
   &:hover {
     text-shadow: 0 0 4px #ffffff;
@@ -126,7 +126,7 @@
     content: "";
     width: 25px;
     height: 25px;
-    mask: url(../../icons/calendar-tick.svg) no-repeat center;
+    mask: url("../../icons/calendar-tick.svg") no-repeat center;
     background-color: #d3e1e1;
     left: 15px;
     top: 50%;

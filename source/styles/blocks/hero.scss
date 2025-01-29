@@ -112,7 +112,7 @@
   }
 }
 
-.hero__address-link.contacts__list-description {
+.hero__address-link.contacts-list-description {
   display: flex;
   flex-flow: row wrap;
   width: 200px;
@@ -125,6 +125,7 @@
   color: #bccaca;
   margin: 0 0 20px;
   align-items: center;
+  height: unset;
 
   &:hover {
     text-shadow: 0 0 4px #ffffff;
@@ -173,13 +174,14 @@
   }
 }
 
-.hero__phone-link.contacts__list-description.contacts__list-description-phone {
+.hero__phone-link.contacts-list-description.contacts-list-description-phone {
   display: flex;
   align-items: center;
   position: relative;
   padding: 6px 6px 6px 30px;
   font-size: 14px;
   line-height: 18px;
+  height: unset;
 
   &:hover {
     text-shadow: 0 0 4px #ffffff;
@@ -208,10 +210,6 @@
     mask: url(../../icons/whatsapp.svg) no-repeat center;
     background-color: #ffffff;
     left: 3px;
-  }
-
-  @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {

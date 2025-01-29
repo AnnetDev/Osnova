@@ -1,23 +1,13 @@
 .footer {
   font-family: $project-font;
   letter-spacing: 0;
-
   min-width: 320px;
-  // max-width: 1440px;
   background-color: #403270;
   width: 100vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-self: center;
-
-  @media (min-width: $tablet-width) {
-    // padding: 30px 45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // padding: 40px 60px;
-  }
 }
 
 .footer__contacts-list {
@@ -32,18 +22,15 @@
   width: 320px;
   padding: 20px;
 
-
   @media (min-width: $tablet-width) {
     width: 768px;
     justify-content: space-between;
     padding: 30px 45px;
-
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 40px 60px;
-
   }
 }
 
@@ -52,11 +39,11 @@
   margin: 0;
   padding: 0 0 0 20px;
   position: relative;
+
   @media (min-width: $desktop-width) {
     padding: 0 0 0 35px;
-align-items: center;
+    align-items: center;
   }
-
 }
 
 .footer__contacts-description,
@@ -76,12 +63,12 @@ align-items: center;
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 20px;
+    padding: 15px;
   }
 
   &:hover {
     text-shadow: 0 0 4px #ffffff;
     color: #ffffff;
-    // box-shadow: 0 0 4px 3px #ffffff;
   }
 
   &:focus,
@@ -97,8 +84,6 @@ align-items: center;
     opacity: 50%;
     box-shadow: none;
   }
-
-
 }
 
 .footer__contacts-item--phone::after {
@@ -107,6 +92,8 @@ align-items: center;
   width: 15px;
   height: 15px;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   mask: url(../../icons/call.svg) no-repeat center;
   background-color: #ffffff;
 
@@ -122,6 +109,8 @@ align-items: center;
   width: 15px;
   height: 15px;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   mask: url(../../icons/location.svg) no-repeat center;
   background-color: #ffffff;
 
