@@ -79,14 +79,19 @@
 
   &:hover {
     outline: none;
-    box-shadow: 0 0 4px 3px #ffffff;
+
+    @media (min-width: $desktop-width) {
+      box-shadow: 0 0 4px 3px #ffffff;
+    }
   }
 
   &:focus,
   &:focus-visible,
   &:focus-within {
     outline: none;
-    box-shadow: 0 0 4px 3px #ffffff;
+
+    @media (min-width: $desktop-width) {
+    box-shadow: 0 0 4px 3px #ffffff;}
   }
 
   &:active {
@@ -112,7 +117,6 @@
     left: 44%;
     transform: translateX(-44%);
     padding: 10px 15px 10px 10px;
-
   }
 }
 
@@ -123,6 +127,8 @@
   background-size: contain;
   width: 25px;
   height: 25px;
+  transition: all 0.3s ease;
+
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -140,9 +146,9 @@
   mask: url(../../icons/arrow-left.svg) no-repeat center;
   background-color: #bccaca;
   background-size: contain;
-  // left: 0;
   width: 25px;
   height: 25px;
+  transition: all 0.3s ease;
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -163,4 +169,14 @@
 .gallery__button.swiper-button-next:focus-visible::after,
 .gallery__button.swiper-button-next:focus-within::after {
   background-color: #ffffff;
+  width: 28px;
+  height: 28px;
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 35px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 38px;
+    height: 38px;
+  }
 }
