@@ -10,7 +10,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: 100vw;
+    width: calc(100vw - 1px);
     min-width: 320px;
     height: 1px;
     background-color: #bccaca;
