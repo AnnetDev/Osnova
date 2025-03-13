@@ -1,11 +1,10 @@
-// import Swiper from 'swiper/bundle';
-// import { Navigation } from 'swiper/modules';
-// import Swiper styles
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 
 import { initializeGallerySwiper } from './swiper-gallery';
 import { toggleMenu } from './burger-menu';
+import {openPreferredMessenger} from './messenger';
 
 initializeGallerySwiper();
 toggleMenu();
+openPreferredMessenger();
