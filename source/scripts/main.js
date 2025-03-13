@@ -7,4 +7,12 @@ import {openPreferredMessenger} from './messenger';
 
 initializeGallerySwiper();
 toggleMenu();
-openPreferredMessenger();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buyCertificate = document.querySelector('.services__certificate');
+
+  buyCertificate.addEventListener('click', (event) => {
+    openPreferredMessenger(event);
+  });
+});
+
