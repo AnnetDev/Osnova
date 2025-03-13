@@ -7,7 +7,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: calc(100vw - 1px);
+    width: calc(100vw - 4px);
     min-width: 320px;
     height: 1px;
     background-color: #bccaca;
@@ -234,6 +234,7 @@
 }
 
 .contacts__location {
+  position: relative;
   margin: 0 calc((100% - 320px) / 2);
 
   @media (min-width: $tablet-width) {
@@ -256,6 +257,7 @@
   height: 362px;
   position: relative;
   transition: width 0.3s ease;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -266,4 +268,13 @@
     width: 1440px;
     min-height: 600px;
   }
+}
+
+.contacts__location-map-img {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  z-index: 0;
 }
