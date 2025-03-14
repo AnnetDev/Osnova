@@ -1,7 +1,5 @@
 .gallery {
-  padding: 20px;
-  min-width: 320px;
-  max-width: 1440px;
+  width: 100%;
   align-self: center;
   display: flex;
   justify-content: center;
@@ -10,7 +8,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: calc(100vw - 6px);
+    width: 100%;
     min-width: 320px;
     height: 1px;
     background-color: #bccaca;
@@ -18,6 +16,16 @@
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.gallery__container {
+  padding: 20px;
+  min-width: 320px;
+  max-width: 1440px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;

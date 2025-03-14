@@ -8,7 +8,7 @@ export const toggleMenu = () => {
 
     // Открытие меню по клику на иконку
     menuToggle.addEventListener('click', (event) => {
-      event.stopPropagation(); // Останавливаем всплытие, чтобы не закрыть меню, если клик был по иконке
+      event.stopPropagation();
       menu.classList.toggle('header__navigation--opened');
       menuToggle.classList.toggle('header__toggle--opened');
       toggleIcon.classList.toggle('header__toggle-icon--opened');

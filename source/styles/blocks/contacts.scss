@@ -1,13 +1,15 @@
 .contacts {
-  padding: 20px 20px 0;
+  width: 100%;
   font-family: $project-font;
   position: relative;
   align-self: center;
+  display: flex;
+  justify-content: center;
 
   &::before {
     position: absolute;
     content: "";
-    width: calc(100vw - 6px);
+    width: 100%;
     min-width: 320px;
     height: 1px;
     background-color: #bccaca;
@@ -15,6 +17,10 @@
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.contacts__container {
+  padding: 20px 20px 0;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -63,7 +69,6 @@
 
 .contacts__list-title {
   margin: 0;
-  // padding: 5px;
   display: block;
   font-size: 14px;
   line-height: 16px;
@@ -115,7 +120,6 @@
   mask: url("../../icons/location.svg") no-repeat center;
   background-color: #ffffff;
   left: 0;
-  // top: 0;
   top: 50%;
   transform: translateY(-50%);
 
@@ -190,7 +194,6 @@
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 70px;
-    // padding: 10px;
   }
 
   &:hover {

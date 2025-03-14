@@ -1,8 +1,8 @@
 {
-  "name": "cat-energy-31",
+  "name": "osnova",
   "version": "2.0.7",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Личный проект для студии миофасциальной коррекции Основа",
   "type": "module",
   "engines": {
     "node": "^18.18 || ^20.9"

@@ -1,4 +1,3 @@
-/* здесь подключите шрифты */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -38,38 +37,3 @@
     url("../../fonts/montserrat/Montserrat-Bold.woff") format("woff");
   font-display: swap;
 }
-
-// @font-face {
-//   font-family: "Poppins";
-//   font-style: normal;
-//   font-weight: 500;
-//   src: url("../../fonts/poppins/Poppins-Medium.woff2") format("woff2"),
-//     url("../../fonts/poppins/Poppins-Medium.woff") format("woff");
-//   font-display: swap;
-// }
-
-// @include font-face("Montserrat",
-//   400,
-//   normal,
-//   "url('../../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'), url('../../fonts/montserrat/Montserrat-Regular.woff') format('woff')"
-// );
-// @include font-face("Montserrat",
-//   500,
-//   normal,
-//   "url('../../fonts/montserrat/Montserrat-Medium.woff2') format('woff2'), url('../../fonts/montserrat/Montserrat-Medium.woff') format('woff')"
-// );
-// @include font-face("Montserrat",
-//   600,
-//   normal,
-//   "url('../../fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2'), url('../../fonts/montserrat/Montserrat-SemiBold.woff') format('woff')"
-// );
-// @include font-face("Montserrat",
-//   700,
-//   normal,
-//   "url('../../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'), url('../../fonts/montserrat/Montserrat-Bold.woff') format('woff')"
-// );
-// @include font-face("Poppins",
-//   500,
-//   normal,
-//   "url('../../fonts/poppins/Poppins-Medium.woff2') format('woff2'), url('../../fonts/poppins/Poppins-Medium.woff') format('woff')"
-// );
