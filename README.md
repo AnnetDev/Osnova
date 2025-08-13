@@ -6,6 +6,11 @@ Features include sliders, online booking, contact details, and a location map.
 ## 🚀 Webpage
 [View live site](https://osnovavrn.ru/)
 
+
+
+
+
+
 The build system was provided by [HTML Academy](https://htmlacademy.ru).
 
  
