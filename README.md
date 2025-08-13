@@ -1,12 +1,12 @@
 ## 📌 Project Overview
-Responsive website for Osnova massage and fitness studio in Voronezh.
+Responsive website for 'Osnova - massage and fitness studio' in Voronezh city.
 Features include sliders, online booking, contact details, and a location map.
 
 
-## 🚀 Demo
+## 🚀 Webpage
 [View live site](https://osnovavrn.ru/)
 
-This project was built using the adaptive layout build system from the [HTML Academy](https://htmlacademy.ru).
+The build system was provided by [HTML Academy](https://htmlacademy.ru).
 
  
 
